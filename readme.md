@@ -24,6 +24,13 @@ This document outlines the requirements for building a web API to interact with 
   python aider_server.py --port 8080
   ```
 
+```bash
+# Curl Example
+curl -X POST -H "Content-Type: application/json" /
+  -d '{"instruction": "INSTRUCTIONS", "directory": "TARGET"}' / 
+  http://127.0.0.1:5000/code_assistant
+```
+
 ### 2.2 Instruction Execution API
 
 - **Description**: Execute instructions on specified files using Aider.
